@@ -1,0 +1,80 @@
+/* StepStyles.css */
+
+body, html {
+    font-family: 'Suite', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.container {
+    width: 360px;
+    height: 880px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.header-container {
+    background-color: #444;
+    color: #fff;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.header {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.sub-header {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+}
+
+.queue-display {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+    width: 80%;
+}
+
+.queue-number {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #333;
+    text-align: center;
+}
+
+.start-over {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: underline;
+}
