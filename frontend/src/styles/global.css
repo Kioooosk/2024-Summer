@@ -1,0 +1,15 @@
+body {
+  font-family: 'Suite', sans-serif;
+  width: 360px;
+  height: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@font-face {
+  font-family: 'Suite';
+  font-weight: normal;
+  font-style: normal;
+  src: url('../assets/fonts/SUITE-Bold.otf');
+}
