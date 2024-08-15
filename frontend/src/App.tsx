@@ -4,7 +4,8 @@ import Login from './component/Login';
 import Signup from './component/Signup';
 import Complete from './component/Complete';
 import './styles/global.css';
-import { MainPage, Reception } from './pages';
+import { MainPage, Pharmacy, Reception } from './pages';
+import PharmacyInfo from './pages/PharmacyInfo';
 
 function App() {
   return (
@@ -15,6 +16,8 @@ function App() {
         <Route path="/signup" element={<Signup />} />
         <Route path="/complete" element={<Complete />} />
         <Route path="/reception/:step" element={<Reception />} />
+        <Route path="/pharmacy/:step" element={<Pharmacy />} />
+        <Route path="/pharmacy/2/:id" element={<PharmacyInfo />} />
       </Routes>
     </Router>
   );
