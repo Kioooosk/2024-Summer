@@ -5,7 +5,7 @@ import Signup from './component/Signup';
 import Complete from './component/Complete';
 import './styles/global.css';
 import { MainPage, Pharmacy, Reception } from './pages';
-import PharmacyInfo from './pages/PharmacyInfo';
+import DetailInfoPage from './pages/DetailInfoPage';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/complete" element={<Complete />} />
         <Route path="/reception/:step" element={<Reception />} />
         <Route path="/pharmacy/:step" element={<Pharmacy />} />
-        <Route path="/pharmacy/2/:id" element={<PharmacyInfo />} />
+        <Route path="/pharmacy/2/:id" element={<DetailInfoPage />} />
       </Routes>
     </Router>
   );

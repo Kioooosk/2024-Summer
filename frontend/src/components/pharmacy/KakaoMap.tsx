@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 declare global {
@@ -9,41 +10,8 @@ declare global {
 
 const { kakao }: any = window;
 
-function makeOverlayContent({
-  placeName,
-  id,
-}: {
-  placeName: string;
-  id: string;
-}) {
-  const nextUrl = `/pharmacy/2/${id}`; //동적 url로 각 위치마다 해당id 페이지로 이동할 수 있게
-
-  return `
-    <div style="
-        padding: 10px;
-        background-color: white;
-        border: 1px solid black;
-        border-radius: 5px;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-      ">
-        <div>${placeName}</div>
-        <button id="detailButton" onClick="window.location.href='${nextUrl}'" style="
-          margin-top: 5px;
-          padding: 5px 10px;
-          background-color: #007bff;
-          color: white;
-          border: none;
-          border-radius: 3px;
-          cursor: pointer;
-          z-index: 3;
-        ">
-          자세히 보기
-        </button>
-      </div>
-  `;
-}
-
 export default function KakaoMap() {
+  const navigate = useNavigate();
   const mapRef = useRef<HTMLDivElement>(null);
   const curImageSrc = '/images/currMarker.png'; // 현재위치마커 이미지경로
   const pharImageSrc = '/images/pharMarker.png'; // 약국위치마커 이미지경로
@@ -54,6 +22,40 @@ export default function KakaoMap() {
   );
 
   const [map, setMap] = useState<any>();
+
+  function makeOverlayContent({
+    placeName,
+    id,
+  }: {
+    placeName: string;
+    id: string;
+  }) {
+    const nextUrl = `/pharmacy/2/${id}`; //동적 url로 각 위치마다 해당id 페이지로 이동할 수 있게
+
+    return `
+      <div style="
+          padding: 10px;
+          background-color: white;
+          border: 1px solid black;
+          border-radius: 5px;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        ">
+          <div>${placeName}</div>
+          <button id="detailButton-${id}" style="
+            margin-top: 5px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            z-index: 3;
+          ">
+            자세히 보기
+          </button>
+        </div>
+    `;
+  }
 
   useEffect(() => {
     if (mapRef.current) {
@@ -109,6 +111,23 @@ export default function KakaoMap() {
           overlay.setPosition(markerLoc);
           overlay.setContent(newContent);
           overlay.setMap(map);
+
+          //오버레이 버튼 이벤트 추가
+          const detailButton = document.getElementById(
+            `detailButton-${loc.id}`
+          );
+          if (detailButton) {
+            detailButton.addEventListener('click', () => {
+              navigate(`/pharmacy/2/${loc.id}`, {
+                state: {
+                  place_name: loc.place_name,
+                  address_name: loc.address_name,
+                  phone: loc.phone,
+                  distance: loc.distance,
+                },
+              });
+            });
+          }
         });
         //마우스 치워도 창이 바로 사라지지 않게 타이머 설정
         kakao.maps.event.addListener(marker, 'mouseout', function () {
