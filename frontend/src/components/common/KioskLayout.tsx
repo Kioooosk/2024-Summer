@@ -6,44 +6,43 @@ import styled from 'styled-components';
 */
 
 interface KioskLayoutProps {
-  contentTitle: string;
-  children: ReactNode;
+    contentTitle: string;
+    children: ReactNode;
 }
 
 function KioskLayout({ contentTitle, children }: KioskLayoutProps) {
-  return (
-    <KioskWrapper>
-      <ContentWrapper>
-        <ContentTitle>{contentTitle}</ContentTitle>
-        {/* 이 아래로 키오스크에 들어갈 내용들~~ */}
-        {children}
-      </ContentWrapper>
-    </KioskWrapper>
-  );
+    return (
+        <KioskWrapper>
+            <ContentWrapper>
+                <ContentTitle>{contentTitle}</ContentTitle>
+                {/* 이 아래로 키오스크에 들어갈 내용들~~ */}
+                {children}
+            </ContentWrapper>
+        </KioskWrapper>
+    );
 }
 
 export default KioskLayout;
 
 const KioskWrapper = styled.div`
-  width: 335px;
-  height: 670px;
-  background-color: rgba(27, 31, 38, 0.72);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 4px;
+    width: 335px;
+    height: 670px;
+    background-color: rgba(27, 31, 38, 0.72);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
 `;
-
 const ContentWrapper = styled.div`
-  margin-top: 10px;
-  width: 311px;
-  height: 383px;
-  background-color: #fff;
-  border-radius: 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
+    margin-top: 10px;
+    width: 311px;
+    height: 383px;
+    background-color: #fff;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
 `;
 
 const ContentTitle = styled.p`

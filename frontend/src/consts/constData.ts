@@ -8,6 +8,21 @@ export const MAIN_CONTENT_LIST = [
   '병원 근처 약국 찾아보기',
 ];
 
+export const SCENE1_STEP_NAME = [
+  {
+    stepTitle: '첫 번째 단계,',
+    stepSubtitle: '전화번호 입력하기',
+    stepDescription: '전화번호를 입력해주세요',
+    advice: 'page1 advice',
+  },
+  {
+    stepTitle: '모두 다',
+    stepSubtitle: '완료되었어요 🙇‍♀️',
+    stepDescription: '',
+    advice: 'page2 advice',
+  },
+];
+
 export const SCENE4_STEP_NAME = [
   {
     stepTitle: '첫 번째 단계,',
@@ -20,28 +35,28 @@ export const SCENE4_STEP_NAME = [
     stepSubtitle: '수납 내역 조회',
     stepDescription: '수납 금액을 확인해주세요',
     advice:
-      '결제를 진행하려면 수납 버튼을, 이전 화면으로 돌아가려면 취소 버튼을 누릅니다.',
+        '결제를 진행하려면 수납 버튼을, 이전 화면으로 돌아가려면 취소 버튼을 누릅니다.',
   },
   {
     stepTitle: '세 번째 단계,',
     stepSubtitle: '결제 방식 선택',
     stepDescription: '결제 방식을 선택해주세요',
     advice:
-      '원하는 결제방식을 선택합니다. 현금 결제를 원할 경우 안내데스크의 직원에게 문의해주세요!',
+        '원하는 결제방식을 선택합니다. 현금 결제를 원할 경우 안내데스크의 직원에게 문의해주세요!',
   },
   {
     stepTitle: '네 번째 단계,',
     stepSubtitle: '결제하기',
     stepDescription: '카드 결제를 진행합니다',
     advice:
-      '화살표가 가리키는 부분을 길게 꾹～ 눌러주세요. 실제 키오스크에서는 카드 투입구에 체크카드 또는 신용카드를 ‘딸깍’ 소리가 날 때까지 삽입해주세요.',
+        '화살표가 가리키는 부분을 길게 꾹～ 눌러주세요. 실제 키오스크에서는 카드 투입구에 체크카드 또는 신용카드를 ‘딸깍’ 소리가 날 때까지 삽입해주세요.',
   },
   {
     stepTitle: '네 번째 단계,',
     stepSubtitle: '결제하기',
     stepDescription: '간편 결제를 진행합니다',
     advice:
-      '버튼을 눌러 결제 코드를 승인합니다. 실제 키오스크에서는 휴대폰에서 간편 결제 앱을 실행해, QR코드 스캔 기능을 이용하세요.',
+        '버튼을 눌러 결제 코드를 승인합니다. 실제 키오스크에서는 휴대폰에서 간편 결제 앱을 실행해, QR코드 스캔 기능을 이용하세요.',
   },
   {
     stepTitle: '네 번째 단계,',

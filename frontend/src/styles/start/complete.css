@@ -1,0 +1,47 @@
+body {
+  background: white;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  font-family: 'Suite';
+}
+
+.check {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+}
+
+.complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #878787, #15204c);
+  text-align: center;
+  position: relative;
+}
+  
+.complete h1 {
+  color: #ffffff;
+  font-size: 20px;
+}
+  
+.btn3 {
+  margin-top: 15px;
+  width: 200px;
+  height: 50px;
+  border-radius: 3px;
+  background: #557ac1;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  box-shadow: 0 0 0 1px rgb(180, 178, 178);
+  cursor: pointer;
+}

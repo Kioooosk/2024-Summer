@@ -16,7 +16,7 @@ public class SignupService {
         User user = dto.toEntity();
 
         // 필수 정보가 모두 입력되었는지 확인
-        if (user.getId() == 0 || user.getPw() == null || user.getName() == null
+        if (user.getId() == null || user.getPw() == null || user.getName() == null
                 || user.getPhone() == null || user.getSsn() == null) {
             throw new MissingUserInfoException("User information is incomplete.");
         }

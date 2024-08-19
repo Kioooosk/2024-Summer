@@ -1,1 +1,2 @@
-insert into users (id, pw, name, phone, ssn) values (1, '1234', 'Alice', '01012345678', '0101010101010');
+# INSERT INTO USER (id, pw, name, phone, ssn)
+# VALUES ('abcde@gmail.com', '1234', 'Alice', '010-1234-5678', '011111-4000000');

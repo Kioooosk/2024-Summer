@@ -16,14 +16,14 @@ function AdviceBar({ advice, isOpen, onClose }: AdviceBarProps) {
   );
 
   return (
-    <Snackbar
-      open={isOpen}
-      message={<SnackBarText>{advice}</SnackBarText>}
-      action={closeBtn}
-      onClose={onClose}
-      anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-      ContentProps={{ sx: { maxWidth: '360px' } }}
-    />
+      <Snackbar
+          open={isOpen}
+          message={<SnackBarText>{advice}</SnackBarText>}
+          action={closeBtn}
+          onClose={onClose}
+          anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+          ContentProps={{ sx: { maxWidth: '360px' } }}
+      />
   );
 }
 

@@ -11,11 +11,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class MainApiController {
+public class WaitingNumberController {
     @Autowired
     private UserService userService;
     //user name 조회
-    @GetMapping("/{id}")
+    @GetMapping("/queue/{id}")
     public ResponseEntity<String> name(@PathVariable String id){
         //서비스에 위임
         String name = userService.name(id);
