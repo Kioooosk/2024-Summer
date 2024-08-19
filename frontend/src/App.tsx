@@ -4,8 +4,13 @@ import Login from './component/Login';
 import Signup from './component/Signup';
 import Complete from './component/Complete';
 import './styles/global.css';
-import { MainPage, Pharmacy, Reception } from './pages';
-import DetailInfoPage from './pages/DetailInfoPage';
+import {
+  MainPage,
+  Pharmacy,
+  Reception,
+  DetailInfoPage,
+  Registered,
+} from './pages';
 
 function App() {
   return (
