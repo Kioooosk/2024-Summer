@@ -1,4 +1,4 @@
-import { FloatingBtn, Header, KioskLayout, KeypadLayout} from '../components';
+import { FloatingBtn,MainHeader, KioskLayout, KeypadLayout} from '../components/common';
 import { useParams, useNavigate } from 'react-router-dom';
 import { SCENE1_STEP_NAME } from '../consts';
 import { Container, Title, Wrapper } from '../styles/registered/RegisteredStyle';
@@ -22,8 +22,6 @@ const Step1: React.FC = () => {
         </div>
     );
 };
-
-
 
 const Step2 = () => {
     // 랜덤 숫자 생성 (1에서 10 사이)
@@ -84,7 +82,7 @@ const StepComponent = () => {
 export default function Scene4() {
     return (
         <Wrapper>
-            <Header />
+            <MainHeader />
             <Container>
                 <StepComponent />
             </Container>

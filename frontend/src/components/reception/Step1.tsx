@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import KeypadLayout from '../common/KeyPadLayout';
+import KeypadLayout from '../common/KeypadLayout';
 
 export function Step1() {
   const navigate = useNavigate();
