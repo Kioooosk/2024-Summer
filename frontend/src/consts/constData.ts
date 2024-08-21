@@ -13,13 +13,13 @@ export const SCENE1_STEP_NAME = [
     stepTitle: '첫 번째 단계,',
     stepSubtitle: '전화번호 입력하기',
     stepDescription: '전화번호를 입력해주세요',
-    advice: 'page1 advice',
+    advice: '회원가입 시 입력한 전화번호와 동일하게 해주세요',
   },
   {
     stepTitle: '모두 다',
     stepSubtitle: '완료되었어요 🙇‍♀️',
     stepDescription: '',
-    advice: 'page2 advice',
+    advice: '홈 화면으로 돌아가주세요!',
   },
 ];
 
@@ -28,38 +28,38 @@ export const SCENE3_STEP_NAME = [
     stepTitle: '첫 번째 단계,',
     stepSubtitle: '이름 입력하기',
     stepDescription: '성함을 입력해주세요',
-    advice: 'page1 advice',
+    advice: '키보드를 이용하여 입력하세요',
   },
   {
     stepTitle: '두 번째 단계,',
     stepSubtitle: '전화번호 입력하기',
     stepDescription: '전화번호를 입력해주세요',
-    advice: 'page2 advice',
+    advice: '회원가입 시 입력한 번호와 같게 해주세요',
   },
   {
     stepTitle: '세 번째 단계,',
     stepSubtitle: '주민번호 입력하기',
     stepDescription: '주민번호를 입력해주세요',
-    advice: 'page3 advice',
+    advice: '타인에게 노출되지 않게 주의하세요',
   },
   {
     stepTitle: '네 번째 단계,',
     stepSubtitle: '진단명 포함 여부 선택',
     stepDescription: '증명서 발급 시\n' +
         '진단명(병명) 포함을 원하시나요?',
-    advice: 'page4 advice',
+    advice: '',
   },
   {
     stepTitle: '다섯 번째 단계,',
     stepSubtitle: '증명서 종류 입력하기',
     stepDescription: '원하시는 의료 증명서의 종류를 선택해주세요',
-    advice: 'page5 advice',
+    advice: '실제로 원하는 증명서가 없다면 직원에게 직접 문의하세요',
   },
   {
     stepTitle: '모두 다',
     stepSubtitle: '완료되었어요',
     stepDescription: '',
-    advice: 'page6 advice',
+    advice: ' ',
   },
 ];
 
