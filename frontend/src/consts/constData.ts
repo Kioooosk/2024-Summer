@@ -65,3 +65,12 @@ export const SCENE4_STEP_NAME = [
     advice: '다른 메뉴 연습을 위해 첫 화면으로 돌아가세요.',
   },
 ];
+
+export const SCENE5_STEP_NAME = [
+  {
+    stepTitle: '첫 번째 단계,',
+    stepSubtitle: '원하는 약국 선택하기',
+    stepDescription: '방문을 희망하는 약국을 선택해주세요',
+    advice: '주변 약국을 찾기 위해 위치 접근을 허용해주세요!',
+  },
+];
