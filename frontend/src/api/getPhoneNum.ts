@@ -7,7 +7,7 @@ interface Patient {
 }
 
 // 환자 정보를 가져오는 API 함수
-export async function getPatientInfo(id: number, phone: string): Promise<Patient> {
+export async function getPatientInfo(id: string, phone: string): Promise<Patient> {
     try {
         const response = await axios.get<Patient>(`/regi_res/${id}`, {
             params: { phone }
