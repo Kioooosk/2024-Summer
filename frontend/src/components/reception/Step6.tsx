@@ -5,6 +5,7 @@ import { ContentTitle, EndButton } from '../../styles/reception/ReceptionStyle';
 //결제완료
 export function Step6() {
   const navigate = useNavigate();
+  const handleClick = () => navigate('/mainpage');
 
   return (
     <>
@@ -14,7 +15,7 @@ export function Step6() {
         <br />
         수고하셨습니다.
       </ContentTitle>
-      <EndButton onClick={() => navigate('/')}>첫 화면으로 돌아가기</EndButton>
+      <EndButton onClick={handleClick}>첫 화면으로 돌아가기</EndButton>
     </>
   );
 }
