@@ -6,3 +6,4 @@ export { default as KioskLayout } from './KioskLayout';
 export { default as MainButton } from './MainButton';
 export { default as MainHeader } from './MainHeader';
 export { default as SubButton } from './SubButton';
+export { default as SubmitButton } from './SubmitButton';
