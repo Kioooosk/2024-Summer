@@ -1,14 +1,21 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'; // Import BrowserRouter as Router
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from 'react-router-dom'; // Import BrowserRouter as Router
 import './App.css';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Complete from './pages/Complete';
 import './styles/global.css';
-import {  MainPage,  Pharmacy,
+import {
+  MainPage,
+  Pharmacy,
   Reception,
   DetailInfoPage,
   Registered,
-  Certificate
+  Certificate,
 } from './pages';
 
 function App() {

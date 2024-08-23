@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import "../styles/start/signup.css";
+import '../styles/start/signup.css';
+import axios from 'axios';
 
 function Signup() {
   const [formData, setFormData] = useState({
@@ -8,7 +9,7 @@ function Signup() {
     id: '',
     pw: '',
     phone: '',
-    identify: '',
+    ssn: '',
   });
 
   const navigate = useNavigate();
@@ -19,8 +20,25 @@ function Signup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Signup form submitted', formData);
-    navigate('/complete');
+    handleSignup(formData);
+  };
+
+  const handleSignup = async (formData) => {
+    try {
+      const response = await axios.post('http://43.202.54.214:8080/signup', {
+        id: formData.id,
+        pw: formData.pw,
+        name: formData.name,
+        phone: formData.phone,
+        ssn: formData.ssn,
+      });
+
+      if (response.status === 200) {
+        navigate('/complete');
+      }
+    } catch (e) {
+      alert(e.response.data);
+    }
   };
 
   return (
@@ -78,9 +96,13 @@ function Signup() {
           onChange={handleChange}
         />
 
-        <button className="btn2" type="submit">회원가입</button>
+        <button className="btn2" type="submit">
+          회원가입
+        </button>
       </form>
-      <Link className="goback" to="/">계정이 이미 있으신가요?</Link>
+      <Link className="goback" to="/">
+        계정이 이미 있으신가요?
+      </Link>
     </div>
   );
 }
