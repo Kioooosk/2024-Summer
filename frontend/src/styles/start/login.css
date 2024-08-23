@@ -1,96 +1,88 @@
-body {
-    background: white;
-    width: 335px;
-    height: 670px;
-    text-align: center;
-    margin: 0;
-    font-family: 'Suite';
-}
-
 h1 {
-    color: #ffffff;
-    font-size: 16px;
-    margin-top: 10rem;
-    margin-bottom: 0.1rem;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: 10rem;
+  margin-bottom: 0.1rem;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 h2 {
-    color: #ffffff;
-    font-size: 35px;
-    margin: 0;
-    margin-bottom: 1.2rem;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+  color: #ffffff;
+  font-size: 35px;
+  margin: 0;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .text_area {
-    margin-bottom: 15px;
-    width: 100%;
-    max-width: 300px;
-    height: 45px;
-    background: #ffffff;
-    box-shadow: 0 0 0 1px rgb(180, 178, 178);
-    border-radius: 3px;
-    box-sizing: border-box;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 300px;
+  height: 45px;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgb(180, 178, 178);
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .text_input {
-    font-size: 13px;
-    border: none;
-    color: #a6a6a6;
-    width: 95%;
-    height: 100%;
-    box-sizing: border-box;
-    border-radius: 3px;
+  font-size: 13px;
+  border: none;
+  color: #a6a6a6;
+  width: 95%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .btn {
-    margin-bottom: 5px;
-    width: 120px;
-    height: 50px;
-    border-radius: 3px;
-    background: #557ac1;
-    border: none;
-    font-size: 16px;
-    color: #ffffff;
-    box-shadow: 0 0 0 1px rgb(180, 178, 178);
-    cursor: pointer;
+  margin-bottom: 5px;
+  width: 120px;
+  height: 50px;
+  border-radius: 3px;
+  background: #557ac1;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  box-shadow: 0 0 0 1px rgb(180, 178, 178);
+  cursor: pointer;
 }
 
 .login {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(180deg, #919599, #2c2b52);
-    width: 320px;
-    height: 700px;
-    margin: 2% auto;
-    box-sizing: border-box;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #919599, #2c2b52);
+  width: 360px;
+  height: 800px;
+  margin: 2% auto;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
 }
 
 .link {
-    color: #ffffff;
-    font-size: 13px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 0.5rem;
-    text-decoration-line: underline;
+  color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  text-decoration-line: underline;
 }
 
 .icon {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-width: 300px;
-    height: 180px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 300px;
+  height: 180px;
 }

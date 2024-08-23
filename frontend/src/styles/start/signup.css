@@ -1,107 +1,99 @@
-body {
-    background: white;
-    height: 100vh;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-    font-family: 'Suite';
-}
-
 h5 {
-    color: white;
-    font-size: 20px;
-    margin-top: 1rem;
-    margin-bottom: 0.1rem;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+  color: white;
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 0.1rem;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 h6 {
-    color: #ffffff;
-    font-size: 10px;
-    margin: 0;
-    margin-bottom: 1.2rem;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
+  color: #ffffff;
+  font-size: 10px;
+  margin: 0;
+  margin-bottom: 1.2rem;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 h7 {
-    color: white;
-    font-size: 13px;
-    margin: 0;
-    margin-bottom: 0.3rem;
-    text-align: left;
-    width: 100%
+  color: white;
+  font-size: 13px;
+  margin: 0;
+  margin-left: 40px;
+  margin-bottom: 0.3rem;
+  text-align: left;
+  width: 100%;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
 }
 
 .text_area {
-    margin-bottom: 15px;
-    width: 100%;
-    max-width: 280px;
-    height: 45px;
-    background: #ffffff;
-    box-shadow: 0 0 0 1px rgb(180, 178, 178);
-    border-radius: 3px;
-    box-sizing: border-box;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 280px;
+  height: 45px;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgb(180, 178, 178);
+  border-radius: 3px;
+  box-sizing: border-box;
 }
 
 .text_input {
-    font-size: 13px;
-    border: none;
-    color: #a6a6a6;
-    width: 95%;
-    height: 100%;
-    box-sizing: border-box;
-    border-radius: 3px;
+  font-size: 13px;
+  border: none;
+  color: #a6a6a6;
+  width: 95%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
 
 .btn2 {
-    margin-top: 10px;
-    width: 120px;
-    height: 50px;
-    border-radius: 3px;
-    background: #557ac1;
-    border: none;
-    font-size: 16px;
-    color: #ffffff;
-    box-shadow: 0 0 0 1px rgb(180, 178, 178);
-    cursor: pointer;
+  margin-top: 10px;
+  width: 120px;
+  height: 50px;
+  border-radius: 3px;
+  background: #557ac1;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  box-shadow: 0 0 0 1px rgb(180, 178, 178);
+  cursor: pointer;
 }
 
 .signup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: linear-gradient(180deg, #919599, #2c2b52);
-    width: 320px;
-    height: 700px;
-    margin: 2% auto;
-    box-sizing: border-box;
-    position: relative;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #919599, #2c2b52);
+  width: 360px;
+  height: 800px;
+  margin: 2% auto;
+  box-sizing: border-box;
+  position: relative;
+  padding: 20px;
 }
 
 .goback {
-    color: #ffffff;
-    font-size: 13px;
-    cursor: pointer;
-    text-decoration: none;
-    margin-top: 1rem;
-    text-decoration-line: underline;
+  color: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+  text-decoration-line: underline;
 }
 
 .start {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    margin-bottom: 20px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
 }

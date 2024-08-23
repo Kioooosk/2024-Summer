@@ -4,7 +4,7 @@ import { KeypadLayout } from '../common';
 
 export function Step1() {
   const navigate = useNavigate();
-  const id = sessionStorage.getItem('id');
+  const id = sessionStorage.getItem('userId');
 
   const handleConfirm = async (inputValue: string) => {
     if (inputValue.length === 13) {
