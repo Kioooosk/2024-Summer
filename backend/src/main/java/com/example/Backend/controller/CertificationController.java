@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@CrossOrigin(origins ="*", methods={RequestMethod.GET})
 public class CertificationController {
     @Autowired
     private UserService userService;

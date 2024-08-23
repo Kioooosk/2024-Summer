@@ -1,5 +1,6 @@
 package com.example.Backend.dto;
 
+import com.example.Backend.entity.Role;
 import com.example.Backend.entity.User;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
@@ -39,6 +40,6 @@ public class UserDto {
     private String ssn;
 
     public User toEntity() {
-        return new User(id, pw, name, phone, ssn);
+        return new User(id, pw, name, phone, ssn, null);
     }
 }

@@ -6,6 +6,7 @@ import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -13,6 +14,8 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/regi_on")
+@CrossOrigin(origins ="*", methods={RequestMethod.GET})
+@Validated
 public class OnSiteRegistrationController {
 
     @Autowired
@@ -20,7 +23,7 @@ public class OnSiteRegistrationController {
 
     // 현장환자 이름
     @GetMapping("/name/{id}")
-    public ResponseEntity<String> validationName(@PathVariable String id, @Valid @RequestParam String name){
+    public ResponseEntity<String> validationName(@PathVariable String id, @RequestParam String name){
         try {
             // 서비스에 위임하여 이름 검증
             boolean isSame = userService.validateName(id, name);
@@ -45,7 +48,7 @@ public class OnSiteRegistrationController {
 
     // 현장환자 전화번호
     @GetMapping("/phone/{id}")
-    public ResponseEntity<Map<String, String>> validatePhoneAndGetName(@PathVariable String id, @Valid @RequestParam String phone){
+    public ResponseEntity<Map<String, String>> validatePhoneAndGetName(@PathVariable String id, @RequestParam String phone){
         Map<String, String> response = new HashMap<>();
         try {
             // 서비스에서 사용자 이름 가져오기
@@ -77,7 +80,7 @@ public class OnSiteRegistrationController {
 
     // 현장환자 주민번호
     @GetMapping("/ssn/{id}")
-    public ResponseEntity<Map<String, String>> validateSsnAndGetName(@PathVariable String id, @Valid @RequestParam String ssn){
+    public ResponseEntity<Map<String, String>> validateSsnAndGetName(@PathVariable String id, @RequestParam String ssn){
         Map<String, String> response = new HashMap<>();
         try {
             // 서비스에서 사용자 이름 가져오기
