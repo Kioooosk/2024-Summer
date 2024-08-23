@@ -1,12 +1,25 @@
+import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import "../styles/start/login.css";
 
 function Login() {
   const navigate = useNavigate();
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    navigate('/MainPage');
+
+    const idValue = event.target.id.value;
+    const pwValue = event.target.pw.value;
+
+    if (idValue && pwValue) {
+      // 로그인 상태를 sessionStorage에 저장
+      sessionStorage.setItem("isLogin", true);
+
+      navigate('/MainPage');
+    } else {
+      setErrorMessage('아이디와 비밀번호를 모두 입력해주세요.');
+    }
   };
 
   return (
@@ -36,6 +49,7 @@ function Login() {
 
         <button className="btn" type="submit">로그인</button>
       </form>
+      {errorMessage && <p className="error">{errorMessage}</p>}
       <Link className="link" to="/signup">처음 오셨나요?</Link>
       <Link className="link" to="/MainPage">로그인 없이 둘러보기</Link>
     </div>
