@@ -68,7 +68,6 @@ const KeypadLayout: React.FC<KeypadLayoutProps> = ({ onConfirm, useHyphen }) => 
           </Keypad>
       </Container>
     );
-=======
   onConfirm: (inputValue: string) => void; // 부모 컴포넌트에서 전달받은 확인 버튼 핸들러
 }
 
@@ -127,7 +126,6 @@ const KeypadLayout: React.FC<KeypadLayoutProps> = ({ onConfirm }) => {
       </Keypad>
     </Container>
   );
->>>>>>> 1999a1ce5ba0deb478dd7d94c849a9d9ea98168b
 };
 
 export default KeypadLayout;
