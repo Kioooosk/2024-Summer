@@ -12,6 +12,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/regi_res")
+@CrossOrigin(origins ="*", methods={RequestMethod.GET})
 public class ReservedRegistrationController {
 
     @Autowired

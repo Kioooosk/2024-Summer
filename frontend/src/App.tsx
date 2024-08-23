@@ -4,7 +4,12 @@ import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Complete from './pages/Complete';
 import './styles/global.css';
-import { MainPage, Reception, Registered, NotRegistered } from './pages';
+import {  MainPage,  Pharmacy,
+  Reception,
+  DetailInfoPage,
+  Registered,
+  NotRegistered
+} from './pages';
 
 function App() {
   return (
@@ -17,6 +22,8 @@ function App() {
         <Route path="/registered/:step" element={<Registered />} />
         <Route path="/notregistered/:step" element={<NotRegistered />} />
         <Route path="/reception/:step" element={<Reception />} />
+        <Route path="/pharmacy/:step" element={<Pharmacy />} />
+        <Route path="/pharmacy/2/:id" element={<DetailInfoPage />} />
       </Routes>
     </Router>
   );
