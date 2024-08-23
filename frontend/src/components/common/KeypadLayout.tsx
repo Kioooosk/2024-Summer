@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 
 interface KeypadLayoutProps {
-<<<<<<< HEAD
     onConfirm: (inputValue: string) => void;
     useHyphen?: boolean;  // 하이픈을 사용하는지 여부를 나타내는 props 추가
 }
