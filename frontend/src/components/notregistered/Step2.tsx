@@ -14,7 +14,7 @@ export function Step2() {
     if (name.trim().length > 0) {
       try {
         const response = await axios.get(
-          `http://43.202.54.214:8080/notregistered/name/${id}`,
+          `http://43.202.54.214:8080/regi_on/name/${id}`,
           {
             params: {
               name: name,
@@ -44,7 +44,7 @@ export function Step2() {
         alignItems: 'center', 
         justifyContent: 'center', 
         height: '100vh', 
-        marginBottom: '200px'       }}
+        marginBottom: '200px' }}
     >
       <NameField name={name} setName={setName} />
       <div style={{ marginTop: '20px' }}>

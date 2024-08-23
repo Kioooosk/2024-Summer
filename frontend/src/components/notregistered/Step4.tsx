@@ -9,7 +9,7 @@ export function Step4() {
     if (/^\d{6}-\d{7}$/.test(inputValue)) {
       try {
         const response = await axios.get(
-          `http://43.202.54.214:8080/notregistered/ssn/${id}`,
+          `http://43.202.54.214:8080/regi_on/ssn/${id}`,
           {
             params: {
               ssn: inputValue,

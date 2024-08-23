@@ -12,7 +12,7 @@ export function Step3() {
       // 전화번호가 올바른 형식(3-4-4, 총 13자)인지 확인
       try {
         const response = await axios.get(
-          `http://43.202.54.214:8080/notregistered/phone/${id}`,
+          `http://43.202.54.214:8080/regi_on/phone/${id}`,
           {
             params: {
               phone: inputValue,
