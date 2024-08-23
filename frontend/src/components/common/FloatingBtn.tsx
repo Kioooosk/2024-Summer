@@ -11,7 +11,7 @@ interface FloatingBtnProps {
 
 function FloatingBtn({ advice }: FloatingBtnProps) {
   const navigate = useNavigate();
-  const goHome = () => navigate('/');
+  const goHome = () => navigate('/mainpage');
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -39,19 +39,19 @@ function FloatingBtn({ advice }: FloatingBtnProps) {
   ];
 
   return (
-      <FloatingBtnWrapper>
-        <AdviceBar isOpen={isOpen} advice={advice} onClose={handleClose} />
-        <SpeedDial ariaLabel="floating button" icon={<Add />}>
-          {actions.map(({ name, icon, tooltip, act }) => (
-              <SpeedDialAction
-                  key={name}
-                  icon={icon}
-                  tooltipTitle={tooltip}
-                  onClick={act}
-              />
-          ))}
-        </SpeedDial>
-      </FloatingBtnWrapper>
+    <FloatingBtnWrapper>
+      <AdviceBar isOpen={isOpen} advice={advice} onClose={handleClose} />
+      <SpeedDial ariaLabel="floating button" icon={<Add />}>
+        {actions.map(({ name, icon, tooltip, act }) => (
+          <SpeedDialAction
+            key={name}
+            icon={icon}
+            tooltipTitle={tooltip}
+            onClick={act}
+          />
+        ))}
+      </SpeedDial>
+    </FloatingBtnWrapper>
   );
 }
 

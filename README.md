@@ -13,6 +13,7 @@
         <img src="https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=Figma&logoColor=white">
         <img src="https://img.shields.io/badge/Git-F05032?style=flat&logo=Git&logoColor=white">
         <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=white">
+        <img src="https://img.shields.io/badge/Typescript-3178C6?style=flat&logo=Typescript&logoColor=white">
         <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white">
         <img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat&logo=Prettier&logoColor=white">
         <br/>
@@ -20,7 +21,12 @@
         <img src="https://img.shields.io/badge/Eslint-4B32C3?style=flat&logo=Eslint&logoColor=white">
         <img src="https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=MySQL&logoColor=white">
         <img src="https://img.shields.io/badge/Java-007396?style=flat&logo=Java&logoColor=white">
+        <img src="https://img.shields.io/badge/amazonwebservices-232F3E?style=flat&logo=amazonwebservices&logoColor=white">
+        <img src="https://img.shields.io/badge/springboot-6DB33F?style=flat&logo=springboot&logoColor=white">
+        <img src="https://img.shields.io/badge/ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white">
         <br/>
+    </div>
+    <div align = "center">
         <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-pr/Kioooosk/2024-Summer">
         <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-pr-closed/Kioooosk/2024-Summer">
     </div>

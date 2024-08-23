@@ -1,8 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 
 //흰색 가로 버튼
-function MainButton({ text }: { text: string }) {
-  return <Button>{text}</Button>;
+function MainButton({ text, goLink }: { text: string; goLink: string }) {
+  const navigate = useNavigate();
+  const handleClick = (goLink: string) => {
+    navigate(goLink);
+  };
+
+  return <Button onClick={() => handleClick(goLink)}>{text}</Button>;
 }
 
 export default MainButton;
