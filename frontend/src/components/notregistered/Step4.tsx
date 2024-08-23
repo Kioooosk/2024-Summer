@@ -17,7 +17,7 @@ export function Step4() {
           }
         );
         if (response.status === 200) {
-          navigate('/certificate/4');
+          navigate('/notregistered/5');
         }
       } catch (error) {
         if (axios.isAxiosError(error)) {
