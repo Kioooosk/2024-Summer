@@ -8,11 +8,8 @@ import {  MainPage,  Pharmacy,
   Reception,
   DetailInfoPage,
   Registered,
-<<<<<<< HEAD
-  Certificate
-=======
+  Certificate,
   NotRegistered
->>>>>>> 1999a1ce5ba0deb478dd7d94c849a9d9ea98168b
 } from './pages';
 
 function App() {
