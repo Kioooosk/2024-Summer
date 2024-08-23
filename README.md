@@ -26,7 +26,7 @@
         <img src="https://img.shields.io/badge/ubuntu-E95420?style=flat&logo=ubuntu&logoColor=white">
         <br/>
     </div>
-    <div>
+    <div align = "center">
         <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-pr/Kioooosk/2024-Summer">
         <img alt="GitHub Issues or Pull Requests" src="https://img.shields.io/github/issues-pr-closed/Kioooosk/2024-Summer">
     </div>
