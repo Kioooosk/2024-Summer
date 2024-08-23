@@ -5,3 +5,5 @@ export { default as NotRegistered} from './NotRegistered';
 export { default as Login } from './Login';
 export { default as Signup } from './Signup';
 export { default as Complete } from './Complete';
+export { default as Pharmacy } from './Pharmacy';
+export { default as DetailInfoPage } from './DetailInfoPage';

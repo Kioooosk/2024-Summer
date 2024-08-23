@@ -2,9 +2,11 @@ package com.example.Backend.controller;
 
 import com.example.Backend.exception.UserNotFoundException;
 import com.example.Backend.service.UserService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -12,6 +14,8 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/regi_on")
+@CrossOrigin(origins ="*", methods={RequestMethod.GET})
+@Validated
 public class OnSiteRegistrationController {
 
     @Autowired

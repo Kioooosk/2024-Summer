@@ -17,43 +17,46 @@ const StepComponent = () => {
   const { stepTitle, stepSubtitle, stepDescription, advice } = stepName;
 
   //n번째 단계, ... 부분
-  const renderTitle = () => {
-    return (
-      <Title>
-        {stepTitle}
-        <br />
-        {stepSubtitle}
-      </Title>
-    );
-  };
+  const StepTitleComponent = (
+    <Title>
+      {stepTitle}
+      <br />
+      {stepSubtitle}
+    </Title>
+  );
 
   //키오스크 레이아웃 안에 들어가는 부분
-  const renderStepComponent = () => {
-    switch (step) {
-      case '1':
-        return <Step1 />;
-      case '2':
-        return <Step2 />;
-      case '3':
-        return <Step3 />;
-      case '4':
-        return <Step4 />;
-      case '5':
-        return <Step5 />;
-      case '6':
-        return <Step6 />;
-      default:
-        return <h1>Not Found</h1>;
-    }
-  };
+  var StepContentComponent;
+  switch (step) {
+    case '1':
+      StepContentComponent = <Step1 />;
+      break;
+    case '2':
+      StepContentComponent = <Step2 />;
+      break;
+    case '3':
+      StepContentComponent = <Step3 />;
+      break;
+    case '4':
+      StepContentComponent = <Step4 />;
+      break;
+    case '5':
+      StepContentComponent = <Step5 />;
+      break;
+    case '6':
+      StepContentComponent = <Step6 />;
+      break;
+    default:
+      StepContentComponent = <h1>Not Found</h1>;
+  }
 
   //타이틀 + 껍데기 +플로팅 버튼 내보내기
   return (
     <>
-      {renderTitle()}
+      {StepTitleComponent}
       <KioskLayout
         contentTitle={stepDescription}
-        children={renderStepComponent()}
+        children={StepContentComponent}
       />
       <FloatingBtn advice={advice} />
     </>
