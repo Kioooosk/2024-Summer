@@ -36,7 +36,8 @@ export function Step1() {
 
   return (
     <div>
-      <KeypadLayout onConfirm={handleConfirm} /> {/* onConfirm prop을 전달 */}
+      <KeypadLayout onConfirm={handleConfirm} useHyphen={true} />{' '}
+      {/* onConfirm prop을 전달 */}
     </div>
   );
 }
