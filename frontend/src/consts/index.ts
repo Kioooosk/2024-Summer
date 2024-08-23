@@ -3,5 +3,4 @@ export {
   SCENE4_STEP_NAME,
   SCENE5_STEP_NAME,
   SCENE1_STEP_NAME,
-  SCENE2_STEP_MAME,
 } from './constData';
