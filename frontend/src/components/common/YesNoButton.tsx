@@ -1,16 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const OkNoButton: React.FC = () => {
+interface YesNoButtonProps {
+    onYes: () => void;
+    onNo: () => void;
+}
+
+const YesNoButton: React.FC<YesNoButtonProps> = ({ onYes, onNo }) => {
     return (
         <ButtonContainer>
-            <ActionButton color="#d9534f">지우기</ActionButton> {/* 빨간색 버튼 */}
-            <ActionButton color="#0275d8">확인</ActionButton>  {/* 파란색 버튼 */}
+            <ActionButton color="#0275d8" onClick={onYes}>예</ActionButton>  {/* 파란색 버튼 */}
+            <ActionButton color="#d9534f" onClick={onNo}>아니요</ActionButton> {/* 빨간색 버튼 */}
         </ButtonContainer>
     );
 };
 
-export default OkNoButton;
+export default YesNoButton;
 
 const ButtonContainer = styled.div`
     display: flex;
@@ -27,6 +32,7 @@ const ActionButton = styled.button<{ color: string }>`
     font-size: 18px;
     color: #fff;
     cursor: pointer;
+    font-family: 'Suite', sans-serif;
 
     &:active {
         opacity: 0.8;

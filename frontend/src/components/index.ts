@@ -1,4 +1,8 @@
-export { default as FloatingBtn } from './common/FloatingBtn';
-export { default as Header } from './common/MainHeader';
-export { default as KioskLayout } from './common/KioskLayout';
-export { default as KeypadLayout } from './common/KeypadLayout';
+export { default as AdviceBar } from './AdviceBar';
+export { default as ButtonList } from './ButtonList';
+export { default as FloatingBtn } from './FloatingBtn';
+export { default as KeypadLayout } from './KeypadLayout';
+export { default as KioskLayout } from './KioskLayout';
+export { default as MainButton } from './MainButton';
+export { default as MainHeader } from './MainHeader';
+export { default as SubButton } from './SubButton';

@@ -49,6 +49,7 @@ const StepComponent = () => {
     default:
       StepContentComponent = <h1>Not Found</h1>;
   }
+
   //타이틀 + 껍데기 +플로팅 버튼 내보내기
   return (
     <>

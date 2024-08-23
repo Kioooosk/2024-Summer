@@ -1,6 +1,7 @@
 package com.example.Backend;
 
 import com.example.Backend.controller.CertificationController;
+import com.example.Backend.controller.WaitingNumberController;
 import com.example.Backend.dto.UserDto;
 import com.example.Backend.exception.UserNotFoundException;
 import com.example.Backend.repository.UserRepository;
@@ -36,6 +37,8 @@ class CertificationTests{
 	SecurityConfig securityConfig;
 	@Autowired
 	UserRepository userRepository;
+	@Autowired
+	WaitingNumberController wt;
 	//phone number check test
 	@Test
 	void phoneCheck(){
@@ -44,6 +47,11 @@ class CertificationTests{
 		String encoded = userRepository.findById(id).orElseThrow(()->new UserNotFoundException("해당 아이디 "+id+"는 존재하지 않습니다.")).getPhone();
 		//컨트롤러로 비교
 		certificationController.validationPhone(id, phone);
+	}
+
+	@Test
+	void waitingCheck(){
+		wt.name("abcde");
 	}
 
 }

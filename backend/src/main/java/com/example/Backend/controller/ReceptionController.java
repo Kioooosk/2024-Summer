@@ -1,4 +1,3 @@
-
 package com.example.Backend.controller;
 
 import com.example.Backend.exception.UserNotFoundException;
@@ -10,39 +9,14 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @CrossOrigin(origins ="*", methods={RequestMethod.GET})
-public class CertificationController {
+public class ReceptionController {
     @Autowired
     private UserService userService;
 
-    //증명서 이름
-    @GetMapping("/certification/name/{id}")
-    public ResponseEntity<String> validationName(@PathVariable String id, @RequestParam String name){
-        //서비스에 위임
-        boolean isSame = userService.validateName(id, name);
-        //결과 응답
-        if(isSame) return ResponseEntity.status(HttpStatus.OK).body(null);
-        else{
-            throw new UserNotFoundException("정보가 일치하지 않습니다.");
-        }
-    }
-
-    // 증명서 전화번호
-    @GetMapping("/certification/phone/{id}")
+    @GetMapping("/reception/{id}")
     public ResponseEntity<String> validationPhone(@PathVariable String id, @RequestParam String phone){
         //서비스에 위임
         boolean isSame = userService.validatePhone(id, phone);
-        //결과 응답
-        if(isSame) return ResponseEntity.status(HttpStatus.OK).body(null);
-        else{
-            throw new UserNotFoundException("정보가 일치하지 않습니다.");
-        }
-    }
-
-    //증명서 주민번호
-    @GetMapping("/certification/ssn/{id}")
-    public ResponseEntity<String> validationSsn(@PathVariable String id, @RequestParam String ssn){
-        //서비스에 위임
-        boolean isSame = userService.validateSsn(id, ssn);
         //결과 응답
         if(isSame) return ResponseEntity.status(HttpStatus.OK).body(null);
         else{
