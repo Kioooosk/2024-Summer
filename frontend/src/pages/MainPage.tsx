@@ -13,7 +13,7 @@ export default function MainPage() {
         <ButtonList buttonType="main" contentList={MAIN_CONTENT_LIST} />
         <ImageContainer>
           <TeamLabel>@Team eldkiz</TeamLabel>
-          <img src="images/main-image.png" />
+          <img src="images/MainpageIcon.png" />
         </ImageContainer>
       </Container>
     </Wrapper>
