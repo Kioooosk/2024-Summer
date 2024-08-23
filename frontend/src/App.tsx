@@ -21,10 +21,7 @@ function App() {
         <Route path="/complete" element={<Complete />} />
         <Route path="/MainPage" element={<MainPage />} />
         <Route path="/registered/:step" element={<Registered />} />
-<<<<<<< HEAD
-=======
         <Route path="/notregistered/:step" element={<NotRegistered />} />
->>>>>>> 1999a1ce5ba0deb478dd7d94c849a9d9ea98168b
         <Route path="/reception/:step" element={<Reception />} />
         <Route path="/certificate/:step" element={<Certificate />} />
         <Route path="/pharmacy/:step" element={<Pharmacy />} />
