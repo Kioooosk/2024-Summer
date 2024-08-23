@@ -31,6 +31,45 @@ export const SCENE1_STEP_NAME = [
   },
 ];
 
+export const SCENE2_STEP_NAME = [
+  {
+    stepTitle: '첫 번째 단계,',
+    stepSubtitle: '현재 대기인원 확인하기',
+    stepDescription: '',
+    advice: 'page1 advice',
+  },
+  {
+    stepTitle: '두 번째 단계,',
+    stepSubtitle: '이름 입력하기',
+    stepDescription: '성함을 입력해주세요',
+    advice: '접수자 성함을 입력해주세요.',
+  },
+  {
+    stepTitle: '세 번째 단계,',
+    stepSubtitle: '전화번호 입력하기',
+    stepDescription: '전화번호를 입력해주세요',
+    advice: '접수자 전화번호를 입력해주세요.',
+  },
+  {
+    stepTitle: '네 번째 단계,',
+    stepSubtitle: '주민번호 입력하기',
+    stepDescription: '주민번호를 입력해주세요',
+    advice: '접수자 주민번호를 입력해주세요.',
+  },
+  {
+    stepTitle: '다섯 번째 단계,',
+    stepSubtitle: '진료과 선택하기',
+    stepDescription: '원하시는 진료과를 선택해주세요',
+    advice: 'page5 advice',
+  },
+  {
+    stepTitle: '모두 다',
+    stepSubtitle: '완료되었어요 🙇‍♀️',
+    stepDescription: '',
+    advice: 'page6 advice',
+  },
+];
+
 export const SCENE3_STEP_NAME = [
   {
     stepTitle: '첫 번째 단계,',

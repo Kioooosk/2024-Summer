@@ -8,7 +8,8 @@ import {  MainPage,  Pharmacy,
   Reception,
   DetailInfoPage,
   Registered,
-  Certificate
+  Certificate,
+  NotRegistered
 } from './pages';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/complete" element={<Complete />} />
         <Route path="/mainpage" element={<MainPage />} />
         <Route path="/registered/:step" element={<Registered />} />
+        <Route path="/notregistered/:step" element={<NotRegistered />} />
         <Route path="/reception/:step" element={<Reception />} />
         <Route path="/certificate/:step" element={<Certificate />} />
         <Route path="/pharmacy/:step" element={<Pharmacy />} />
