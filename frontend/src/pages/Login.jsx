@@ -10,11 +10,18 @@ function Login() {
     event.preventDefault();
 
     const idValue = event.target.id.value;
+<<<<<<< HEAD
+=======
+    const pwValue = event.target.pw.value;
+>>>>>>> 1999a1ce5ba0deb478dd7d94c849a9d9ea98168b
 
     if (idValue && pwValue) {
       // 로그인 상태를 sessionStorage에 저장
       sessionStorage.setItem("isLogin", true);
+<<<<<<< HEAD
       sessionStorage.setItem("userId", idValue);
+=======
+>>>>>>> 1999a1ce5ba0deb478dd7d94c849a9d9ea98168b
 
       navigate('/MainPage');
     } else {

@@ -1,8 +1,9 @@
 import { useNavigate } from 'react-router-dom';
 import { KeypadLayout } from '../common';
+
 export function Step1() {
   const navigate = useNavigate();
-  const id = '123'; //임시값, 스토리지 사용 확정되면 바꿀것
+  const id = '123';
 
   const handleConfirm = async (inputValue: string) => {
     if (inputValue.length === 13) {
@@ -19,7 +20,7 @@ export function Step1() {
         if (response.status === 200) {
           console.log('성공');
           console.log(response.body);
-          navigate('/reception/2'); // 다음 스텝으로 이동
+          navigate('/reception/2');
         } else {
           console.log('실패', response.statusText);
         }
@@ -34,7 +35,7 @@ export function Step1() {
 
   return (
     <div>
-      <KeypadLayout onConfirm={handleConfirm} /> {/* onConfirm prop을 전달 */}
+      <KeypadLayout onConfirm={handleConfirm} />
     </div>
   );
 }
