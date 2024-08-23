@@ -36,13 +36,20 @@ export function Step1() {
       alert('이름을 입력해주세요.');
     }
   };
-
+  
   return (
-    <div>
-      {/* name과 setName을 NameField에 전달 */}
+    <div 
+      style={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        alignItems: 'center', 
+        justifyContent: 'center', 
+        height: '100vh', 
+        marginBottom: '200px' 
+      }}
+    >
       <NameField name={name} setName={setName} />
-      <div>
-        <h1> </h1>
+      <div style={{ marginTop: '20px' }}>
         <ConfirmButton onConfirm={handleConfirm} />
       </div>
     </div>

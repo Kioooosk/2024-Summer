@@ -18,11 +18,11 @@ export default ConfirmButton;
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center; /* 버튼을 가운데로 정렬 */
-  margin-top: 20px;
+  margin-top: 5px;
 `;
 
 const ActionButton = styled.button`
-  width: 200px; /* 버튼 너비를 넓게 설정 */
+  width: 100px; /* 버튼 너비를 넓게 설정 */
   height: 60px;
   background-color: #0275d8; /* 파란색 배경 */
   border: none;

@@ -1,35 +1,55 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ConfirmButton from '../certificate/ConfirmButton';
+import NameField from '../certificate/NameField';
+import axios from 'axios';
 
-const Step2: React.FC = () => {
-    const navigate = useNavigate();
-    const [name, setName] = useState('');
-    const [errorMessage, setErrorMessage] = useState('');
+export function Step2() {
+  const navigate = useNavigate();
+  const [name, setName] = useState('');
 
-    const handleConfirm = () => {
-        if (name.trim().length > 0) {
-            setErrorMessage('');
-            navigate('/notregistered/3'); 
-        } else {
-            setErrorMessage('이름을 입력해주세요.');
+  const id = sessionStorage.getItem('userId');
+
+  const handleConfirm = async () => {
+    if (name.trim().length > 0) {
+      try {
+        const response = await axios.get(
+          `http://43.202.54.214:8080/regi_on/name/${id}`,
+          {
+            params: {
+              name: name,
+            },
+          }
+        );
+        if (response.status === 200) {
+          navigate('/notregistered/3');
         }
-    };
+      } catch (error) {
+        if (axios.isAxiosError(error)) {
+          if (error.response) {
+            alert(error.response.data);
+          }
+        }
+      }
+    } else {
+      alert('이름을 입력해주세요.');
+    }
+  };
 
-    return (
-        <div>
-            <input
-                type="text"
-                placeholder="이름을 입력하세요"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                style={{ fontSize: '20px', padding: '10px', width: '80%' }}
-            />
-            {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-            <button onClick={handleConfirm} style={{ marginTop: '20px' }}>
-                확인
-            </button>
-        </div>
-    );
-};
-
-export default Step2;
+  return (
+    <div 
+      style={{ 
+        display: 'flex', 
+        flexDirection: 'column', 
+        alignItems: 'center', 
+        justifyContent: 'center', 
+        height: '100vh', 
+        marginBottom: '200px' }}
+    >
+      <NameField name={name} setName={setName} />
+      <div style={{ marginTop: '20px' }}>
+        <ConfirmButton onConfirm={handleConfirm} />
+      </div>
+    </div>
+  );
+}
