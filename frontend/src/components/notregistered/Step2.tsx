@@ -22,7 +22,7 @@ export function Step2() {
           }
         );
         if (response.status === 200) {
-          navigate('/certificate/2');
+          navigate('/notregistered/3');
         }
       } catch (error) {
         if (axios.isAxiosError(error)) {
