@@ -1,10 +1,8 @@
-<<<<<<< HEAD
 import { FloatingBtn, KioskLayout, MainHeader } from '../components/common';
 import { useParams } from 'react-router-dom';
 import { SCENE1_STEP_NAME } from '../consts';
 import { Container, Title, Wrapper } from '../styles/registered/RegisteredStyle';
 import { Step1, Step2 } from '../components/registered';
-=======
 import { FloatingBtn,MainHeader, KioskLayout, KeypadLayout} from '../components/common';
 import { useParams, useNavigate } from 'react-router-dom';
 import { SCENE1_STEP_NAME } from '../consts';
