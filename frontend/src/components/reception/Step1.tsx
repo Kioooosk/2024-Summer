@@ -4,7 +4,6 @@ import { KeypadLayout } from '../common';
 
 export function Step1() {
   const navigate = useNavigate();
-  const id = '123'; //임시값, 스토리지 사용 확정되면 바꿀것
   const id = sessionStorage.getItem('id');
 
   const handleConfirm = async (inputValue: string) => {
@@ -32,7 +31,6 @@ export function Step1() {
     } else {
       alert('올바른 전화번호를 입력해주세요.');
     }
-    navigate('/reception/2');
   };
 
   return (

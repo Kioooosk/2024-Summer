@@ -7,9 +7,7 @@ export default function MainPage() {
     <Wrapper>
       <MainHeader />
       <Container>
-        <Title>
-          김OO님, <br /> 무엇을 연습해볼까요?
-        </Title>
+        <Title>무엇을 연습해볼까요?</Title>
         <ButtonList buttonType="main" contentList={MAIN_CONTENT_LIST} />
         <ImageContainer>
           <TeamLabel>@Team eldkiz</TeamLabel>

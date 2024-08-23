@@ -1,4 +1,3 @@
-import React from 'react';
 import styled from 'styled-components';
 
 interface NameFieldProps {
@@ -7,16 +6,16 @@ interface NameFieldProps {
 }
 
 const StyledInput = styled.input`
-    font-size: 20px;
-    padding: 10px;
-    width: 80%;
-    box-sizing: border-box;
+  font-size: 20px;
+  padding: 10px;
+  width: 80%;
+  box-sizing: border-box;
 
-    &::placeholder {
-        font-family: Suite, sans-serif;
-        font-size: 18px;
-        color: #888;
-    }
+  &::placeholder {
+    font-family: Suite, sans-serif;
+    font-size: 18px;
+    color: #888;
+  }
 `;
 
 const NameField: React.FC<NameFieldProps> = ({ name, setName }) => {
