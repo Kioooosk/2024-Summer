@@ -8,14 +8,18 @@
 </div>
 
 ## 🔥 팀 소개
-| ![](https://imgur.com/Gbgi63c) | ![](https://imgur.com/4a20EAq)| ![](https://imgur.com/68X9yes) |   ![](https://imgur.com/KHWUhin) | ![](https://imgur.com/LlwwJIL) |
+| ![](https://imgur.com/Gbgi63c.jpg) | ![](https://imgur.com/4a20EAq)| ![](https://imgur.com/68X9yes) |   ![](https://imgur.com/KHWUhin) | ![](https://imgur.com/LlwwJIL) |
 | **길연형** | **서소은** | **이윤지** | **이은상** | **손주현** |
 |**FE 🌐**|**FE 🌐**|**FE 🌐**|**BE 🍎**|**BE 🍎**|
 
 > **길연형** : 웹디자인에 관심이 많고 프론트엔드를 공부합니다 👾
+
 > **서소은** : 개발에 첫걸음을 내딛고 있는 개발자 꿈나무입니다🌱
+
 > **이윤지** : 개발과 도전이 즐거운 웹 풀스택 개발자가 되고자 합니다 (^人^)
+
 > **이은상** : 여러 분야에 도전해보는 개발 모험가입니다🪂
+
 > **손주현** : 최근 백엔드 개발을 공부 중입니다 ☺️
 
 
