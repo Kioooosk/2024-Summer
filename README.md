@@ -9,7 +9,6 @@
 
 ## 🔥 팀 소개
 | ![](https://imgur.com/Gbgi63c.jpg) | ![](https://imgur.com/4a20EAq.jpg)| ![](https://imgur.com/68X9yes.jpg) |   ![](https://imgur.com/KHWUhin.jpg) | ![](https://imgur.com/LlwwJIL.jpg) |
-| :--:| :--:|  :--:  | :--:  | :--:  |
 | **길연형** | **서소은** | **이윤지** | **이은상** | **손주현** |
 | :--:| :--:|  :--:  | :--:  | :--:  |
 |**FE 🌐**|**FE 🌐**|**FE 🌐**|**BE 🍎**|**BE 🍎**|
