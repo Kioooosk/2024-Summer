@@ -60,4 +60,4 @@
 
 |#878787|#15204C|
 | :--: | :--: |
-|![](https://imgur.com/BMZGd8x)|![](https://imgur.com/mPss0ib)|
+|![](https://imgur.com/BMZGd8x.jpg)|![](https://imgur.com/mPss0ib.jpg)|
